@@ -23,6 +23,7 @@ lostpethub/
 │   │   ├── RF.002.md       # Cadastro de Animais de Estimação (Pets)
 │   │   ├── RF.003.md       # Gerenciamento de Status e Desaparecimento
 │   │   └── RF.004.md       # Registro e Consulta de Avistamentos
+│   ├── configuracao_ambiente_e_debates.md # Guia de Ambiente e Defesa Oral
 │   └── schema_lostpethub.sql # Script DDL para criação do Banco MySQL
 │
 ├── lostpethub/
@@ -64,6 +65,16 @@ lostpethub/
 
 ---
 
+## 🛠️ Configuração do Ambiente de Desenvolvimento (Parte 2 & 3)
+
+O ambiente foi padronizado utilizando ferramentas portáteis no diretório `C:\dev\tools`, permitindo execução em máquinas de laboratório (IFRN) sem necessidade de privilégios de administrador:
+
+- **Estrutura:** `C:\dev\tools\apache-maven-3.9.14` e `C:\dev\tools\PortableGit`.
+- **VS Code:** Configurado via `settings.json` com mapeamento explícito de `maven.executable.path`, `git.path` e terminal `Git Bash Portable`.
+- **Relatório Completo e Defesa Oral:** Veja o documento detalhado com as respostas para a apresentação e caderno em [`docs/configuracao_ambiente_e_debates.md`](docs/configuracao_ambiente_e_debates.md).
+
+---
+
 ## 🚀 Como Executar o Projeto
 
 1. Abra o projeto no VS Code ou IDE de sua preferência.
@@ -79,7 +90,7 @@ lostpethub/
 git add .
 
 # 2. Criar o ponto de evolução local (Commit)
-git commit -m "Estruturação inicial do projeto LostPetHub com arquitetura em 3 camadas e MySQL"
+git commit -m "docs: adiciona configuracao de ambiente e guia para encontro de debates (Parte 2 e 3)"
 
 # 3. Publicar no GitHub
 git push
